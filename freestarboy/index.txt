@@ -1,6 +1,0 @@
-<html>
-<title></title>
-<head> 
-  <meta http-equiv="Refresh" content="0; URL=http://example.com/" />
-</head>
-</html>
