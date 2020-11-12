@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>html5 image to base64</title>
+<title>图片转码</title>
 </head>
 <body>
 <script type="text/javascript">
@@ -23,7 +23,7 @@ var reader=new FileReader();
 reader.readAsDataURL(file);
 reader.onload=function(){
 base64_code.innerHTML = this.result; 
-img_area.innerHTML = '<div>图片img标签展示：</div><img src="'+this.result+'" alt=""/>'; 
+img_area.innerHTML = '<div>图片展示：</div><img src="'+this.result+'" alt=""/>'; 
 }
 }
 </script>
