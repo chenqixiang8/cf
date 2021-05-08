@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <changefreq>weekly</changefreq>
+        <priority>1</priority>
+        <loc>https://mytstartone.cf/</loc>
+                <xhtml:link rel="alternate" hreflang="en" href="https://mytstartone.cf/en" />
+                <xhtml:link rel="alternate" hreflang="CN-cn" href="https://mytstartone.cf/" />
+            </url>
+    <url>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+        <loc>https://m.mytstartone.cf/</loc>
+                <xhtml:link rel="alternate" hreflang="en" href="https://m.mytstartone.cf/en" />
+                <xhtml:link rel="alternate" hreflang="CN-cn" href="https://m.mytstartone.cf/" />
+            </url>
+</urlset>
