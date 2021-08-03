@@ -25,7 +25,7 @@ var language = localStorage.getItem('locale') || window.navigator.language.toLow
 //把用户的语言写入缓存，供下次获取使用
 localStorage.setItem('locale', language)
 //判断用户的语言，跳转到不同的地方
-if (language.indexOf("zh") !== -1) {
+if (language.indexOf("zh-cn") !== -1) {
     window.location = '/zh/'
 } else if (language.indexOf('en') !== -1) {
     window.location = '/en/'
