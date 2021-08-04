@@ -15,24 +15,31 @@
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })(); 
-    </script>
-    <script type="text/javascript">
-//获取用户语言的顺序是
-//1.获取本地缓存里的内容
-//2.用户浏览器的语言设置
-//如果上面2个都没有获取到，就直接使用'en'作为用户选择的语言
-var language = localStorage.getItem('locale') || window.navigator.language.toLowerCase() || 'en'
-//把用户的语言写入缓存，供下次获取使用
-localStorage.setItem('locale', language)
-//判断用户的语言，跳转到不同的地方
-if (language.indexOf("zh-") !== -1) {
-    window.location = '/zh/'
-} else if (language.indexOf('en') !== -1) {
-    window.location = '/en/'
-} else {
-    //其它的都使用英文
-    window.location = '/en/'
-}
+<script type="text/javascript">
+        var url;
+        var lang = (navigator.appName=='Netscape'?navigator.language:navigator.userLanguage).toLowerCase();
+        switch(lang){
+                case 'en':
+                        url = 'https://mytstartone.cf/en/';
+                        break;
+                case 'en-us':
+                        url = 'https://mytstartone.cf/en/';
+                        break;
+                case 'zh-cn':
+                        url = 'https://mytstartone.cf/zh/';
+                        break;
+                case 'zh-tw':
+                        url = 'https://mytstartone.cf/tw/';
+                        break;
+                case 'zh-hk':
+                        url = 'https://mytstartone.cf/zh/';
+                        break;
+                default:
+                        url = 'https://mytstartone.cf/';
+        }
+        if( location.href != url ){
+                        location.href = url;
+        }
 </script>
 <script>
 function isMobile() {
